@@ -1,0 +1,10 @@
+
+header {
+    position: relative;
+    height: 800px;
+    min-height: 500px;
+    background-color: rgb(117, 144, 160);
+    text-align: center;
+    overflow: hidden;
+}
+
