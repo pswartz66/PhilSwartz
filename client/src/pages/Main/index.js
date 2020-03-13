@@ -6,7 +6,6 @@ function Main() {
         <div>
             <Header />
             
-
         </div>
     )
 }
