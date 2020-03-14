@@ -1,7 +1,7 @@
 
-#nav {
+#nav-wrap {
     z-index: 100;
-    display: flex;
+    /* display: flex; */
     position: fixed;
     align-items: center;
     min-height: 50px;
@@ -9,6 +9,11 @@
     padding: 0;
     width: 100%;
     background-color: rgb(17, 17, 17);
+}
+
+.navbar-nav > a.nav-link {
+    font-size: 18px;
+    margin: 0 20px 0 20px;
 }
 
 ul {

@@ -9,8 +9,8 @@ header {
     overflow: hidden;
 }
 
-#intro {
-    background: url(../../assets/img/bg-img.jpg) no-repeat center center fixed;
+#intro-container {
+    background: url(../../assets/img/bg-image.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,9 +18,57 @@ header {
     z-index: -1;
     height: 100vh;
     width: 100%;
-    font-size: calc(26px + 4vw);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(129, 239, 243);
+    
+}
+
+#intro {
+    /* height: 100vh; */
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: calc(20px + 4vw);
+    line-height: 1.25em;
+    /* padding: 0 100px 0 100px; */
+    padding-left: 14%;
+    padding-right: 14%;
+
+}
+
+.span-text {
+    color: rgb(94, 248, 114);
+    font-size: calc(14px + 4vw);
+    font-weight: 700;
+}
+
+#sub-intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: calc(8px + 1vw);
+    color: rgb(255, 255, 255);
+    margin-top: 10%;
+    padding-left: 1%;
+    padding-right: 14%;
+    line-height: 1.5em;
+}
+
+/* .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 0 200px 0 200px;
+    line-height: 1.5em;
+
+} */
+
+.divider {
+    margin-top: 1%;
+    border: .5px solid rgb(120, 158, 170);
 }
