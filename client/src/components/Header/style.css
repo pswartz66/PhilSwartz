@@ -55,20 +55,14 @@ header {
     line-height: 1.5em;
 }
 
-/* .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    padding: 0 200px 0 200px;
-    line-height: 1.5em;
-
-} */
 
 .divider {
     margin-top: 1%;
-    border: .5px solid rgb(120, 158, 170);
+    border: .5px solid rgba(255, 255, 255, 0.26);
 }
+
+.divider-two {
+    margin-top: 3%;
+}
+
+
