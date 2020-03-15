@@ -1,0 +1,36 @@
+
+.aboutMeContainer {
+    height: 92vh;
+    width: 100%;
+    background-color: #3a3a3a;
+}
+
+/* overrides bootstrap default margin 
+spacing i.e. right side of page */
+.row {
+    margin: 0 0 0 0;
+}
+.col {
+    padding: 0 0 0 0;
+}
+
+.left-pane {
+    width: 100%;
+    margin: 0 0 0 0;
+    background-color: rgb(48, 48, 48);
+    height: 92vh;
+}
+
+.right-pane {
+    width: 100%;
+    margin: 0 0 0 0;
+    background-color: rgb(87, 87, 87);
+    height: 92vh;
+}
+
+.prof-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    /* position: relative; */
+}

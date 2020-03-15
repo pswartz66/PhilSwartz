@@ -1,13 +1,12 @@
 
-header {
+/* header {
     position: relative;
-    height: 900px;
-    /* height: 100vh; */
+    height: 100vh;
     min-height: 500px;
     background-color: rgb(117, 144, 160);
     text-align: center;
     overflow: hidden;
-}
+} */
 
 #intro-container {
     background: url(../../assets/img/bg-image.jpg) no-repeat center center fixed;

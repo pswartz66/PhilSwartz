@@ -11,6 +11,7 @@ import fadeInUp from 'react-animations/lib/fade-in-up';
 import { FaGithub, FaLinkedinIn, FaInstagram, FaAngleDown } from 'react-icons/fa';
 // import { Link } from 'react-router-dom';
 
+
 // Animations for header section on initial page load
 const leftSlide = keyframes`${slideInLeft}`;
 const SlideLeft = styled.div`
@@ -102,7 +103,10 @@ const Header = () => {
                     </div>
 
                 </section>
+
             </header>
+            
+
         </div>
     )
 }
