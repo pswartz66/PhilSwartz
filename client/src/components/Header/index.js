@@ -9,7 +9,7 @@ import slideInRight from 'react-animations/lib/slide-in-right';
 import fadeOutUpBig from 'react-animations/lib/fade-in-up-big';
 import fadeInUp from 'react-animations/lib/fade-in-up';
 import { FaGithub, FaLinkedinIn, FaInstagram, FaAngleDown } from 'react-icons/fa';
-// import { Link } from 'react-router-dom';
+import { Link } from "react-scroll";
 
 
 // Animations for header section on initial page load
@@ -38,7 +38,8 @@ const FadeIn = styled.div`
   animation: 2.9s ${myFadeIn};
 `;
 
-const Header = () => {
+const Header = (props) => {
+
     return (
         <div>
             <header id="home">
@@ -95,7 +96,18 @@ const Header = () => {
                         <Row>
                             <Col>
                                 <FadeIn>
-                                    <FaAngleDown color={'rgb(94, 248, 114)'} size={28} />
+                                    <a className="down-arrow" href="">
+                                    <Link
+                                        activeClass="active"
+                                        to="aboutMeContainer"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={0}
+                                        duration= {800}
+                                    >
+                                        <FaAngleDown color={'rgb(94, 248, 114)'} size={28} />
+                                    </Link> 
+                                    </a>
                                 </FadeIn>
 
                             </Col>
@@ -106,7 +118,6 @@ const Header = () => {
 
             </header>
             
-
         </div>
     )
 }

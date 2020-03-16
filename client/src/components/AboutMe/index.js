@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import './style.css';
 import profileImg from '../../assets/img/ProfilePicture.jpg';
 
-const AboutMe = () => {
+const AboutMe = (props) => {
     return (
         <div className="aboutMeContainer">
             <Row>
