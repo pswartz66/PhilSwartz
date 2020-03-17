@@ -103,7 +103,7 @@ const Header = (props) => {
                                         spy={true}
                                         smooth={true}
                                         offset={0}
-                                        duration= {800}
+                                        duration= {1000}
                                     >
                                         <FaAngleDown color={'rgb(94, 248, 114)'} size={28} />
                                     </Link> 

@@ -20,7 +20,7 @@ const CustomNav = () => {
                             spy={true}
                             smooth={true}
                             offset={0}
-                            duration= {800}
+                            duration= {1000}
                         >
                         Home
                         </Link>
@@ -34,7 +34,7 @@ const CustomNav = () => {
                             spy={true}
                             smooth={true}
                             offset={0}
-                            duration= {800}
+                            duration= {1000}
                         >
                             About
                         </Link>    
