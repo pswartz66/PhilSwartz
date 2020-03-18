@@ -3,9 +3,8 @@
     height: 92vh;
     width: 100%;
     background-color: rgb(48, 48, 48);
-    display: flex;
+    display: flex;   
 }
-
 /* overrides bootstrap default margin 
 spacing i.e. right side of page */
 .row {
@@ -15,31 +14,25 @@ spacing i.e. right side of page */
     padding: 0 0 0 0;
     /* margin: 4px; */
 }
-
 .left-pane {
-    width: 100%;
+    width: 40%;
     padding: 20px 0 20px 0;
     /* margin-top: 40px; */
     background-color: rgb(48, 48, 48);
-    height: 92vh;
+    /* height: 92vh; */
     display: flex;
-    
 }
 
 .right-pane {
     width: 100%;
-    padding: 80px 0 0 20px;
+    padding: 80px 0 0 0;
     /* margin-top: 60px; */
     background-color: rgb(48, 48, 48);
-    height: 92vh;
-    color: rgb(175, 174, 174);
+    /* height: 92vh; */
     text-align: left;
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
+    /* justify-content: flex-start; */
 
 }
-
 .prof-img {
     height: 140px;
     width: 140px;
@@ -47,12 +40,52 @@ spacing i.e. right side of page */
     padding: 5px;
     margin: 60px;
 }
-
-.aboutMeTitle {
+.Title {
     color: rgb(255, 255, 255)!important;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+.aboutMeParagraph {
+    padding: 0 20px 0px 0!important;
+    line-height: 1.75rem;
+    color: rgb(175, 174, 174);
+}
+.info > ul {
+    padding: 0;
+    margin: 0;
+    color: rgb(175, 174, 174);
+    line-height: 1.75rem;
+}
+/* overrides default ul behavior set to 
+justify-content: center */
+ul {
+    justify-content: flex-start;
+}
+.download-btn {
+    margin-top: 18px;
+    height: 40px;
+    width: 200px;
+    border-radius: 2px;
+    background-color: rgb(131, 131, 131);
+    border: none;
+    color: white;
+}
+#download-text {
+    padding: 2px 4px 2px 4px;
+    font-size: 16px;
+}
+.download-btn:hover {
+    margin-top: 18px;
+    height: 40px;
+    width: 200px;
+    border-radius: 2px;
+    color: black;
+    background-color: white;
+    border: none;
 }
 
-@media only screen and (max-width: 500px) {
+/* adjust panes when screen size < 768px */
+@media only screen and (max-width: 768px) {
     .aboutMeContainer {
         height: 92vh;
         width: 100%;
@@ -61,12 +94,11 @@ spacing i.e. right side of page */
     }
     .left-pane {
         width: 100%;
-        height: 240px;
+        height: 180px;
         padding: 20px 0 20px 0;
         background-color: rgb(48, 48, 48);
         justify-content: center;
         align-items: center;
-
     }
     .prof-img {
         height: 140px;
@@ -78,13 +110,45 @@ spacing i.e. right side of page */
     .right-pane {
         width: 100%;
         padding: 0 0 0 0;
-        background-color: rgb(75, 75, 75);
+        background-color: rgb(48, 48, 48);
         height: 92vh;
         color: rgb(175, 174, 174);
         text-align: center;
     }
-    .aboutMeTitle {
+    .prof-img {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        /* padding: 5px;
+        margin: 60px; */
+    }
+    .Title {
         color: rgb(255, 255, 255);
         font-size: 1.5rem;
+        margin-top: 2px;
+    }
+    .aboutMeParagraph {
+        text-align: left;
+        flex-wrap: wrap;
+        padding: 0 40px 0px 40px!important;
+        line-height: 1.75rem;
+    }
+    .info > ul {
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        color: rgb(175, 174, 174);
+        line-height: 1.75rem;
+    }
+  }
+
+  /* remove profile image if screen < 500px */
+  @media only screen and (max-width: 500px) {
+    .left-pane {
+        display: none;
+    }
+    .right-pane {
+        padding: 40px 0 0 0;
+        
     }
   }
