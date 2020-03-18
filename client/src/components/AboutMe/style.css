@@ -3,7 +3,9 @@
     height: 92vh;
     width: 100%;
     background-color: rgb(48, 48, 48);
-    display: flex;   
+    display: flex;
+    overflow: auto;
+    padding-bottom: 20px;
 }
 /* overrides bootstrap default margin 
 spacing i.e. right side of page */
@@ -87,7 +89,7 @@ ul {
 /* adjust panes when screen size < 768px */
 @media only screen and (max-width: 768px) {
     .aboutMeContainer {
-        height: 92vh;
+        /* height: 780px; */
         width: 100%;
         background-color: rgb(48, 48, 48);
         flex-direction: column;
