@@ -71,3 +71,7 @@
     color: rgb(84, 65, 255);
 }
 
+.down-arrow:hover {
+    cursor: pointer;
+}
+

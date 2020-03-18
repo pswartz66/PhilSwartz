@@ -96,7 +96,7 @@ const Header = (props) => {
                         <Row>
                             <Col>
                                 <FadeIn>
-                                    <a className="down-arrow" href="">
+                                    <a className="down-arrow" href="#anchor">
                                     <Link
                                         activeClass="active"
                                         to="aboutMeContainer"
@@ -104,6 +104,7 @@ const Header = (props) => {
                                         smooth={true}
                                         offset={0}
                                         duration= {1000}
+                                        className="down-arrow"
                                     >
                                         <FaAngleDown color={'rgb(94, 248, 114)'} size={28} />
                                     </Link> 
