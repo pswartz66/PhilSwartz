@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header'
 import AboutMe from '../../components/AboutMe';
-
+import Works from '../../components/Works';
 
 function Main() {
 
@@ -9,6 +9,7 @@ function Main() {
         <div>
             <Header />
             <AboutMe />
+            <Works />
         </div>
     )
 }

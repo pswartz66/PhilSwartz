@@ -40,7 +40,19 @@ const CustomNav = () => {
                         </Link>    
                         
                     </Nav.Link>
-                    <Nav.Link href="#work">Work</Nav.Link>
+                    <Nav.Link href="#work">
+                        <Link 
+                            activeClass="active"
+                            to="worksContainer"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={1000}
+                        >
+                        Works
+                    </Link>
+                    </Nav.Link>
+                    
                     <Nav.Link href="#contact">Contact</Nav.Link>
 
                     

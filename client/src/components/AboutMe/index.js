@@ -2,6 +2,7 @@ import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 import './style.css';
 import profileImg from '../../assets/img/ProfilePicture.jpg';
+import resume from '../../assets/resume/Phillip Swartz - Resume.docx'
 
 const AboutMe = (props) => {
     return (
@@ -30,10 +31,12 @@ const AboutMe = (props) => {
                     <ul>610-675-5479</ul>
                     <ul>pswartz.sju@gmail.com</ul>
                 </div>
-                <button className="download-btn">
-                    <FaDownload />
-                    <span id="download-text"> Download Resume</span>
-                </button>
+                <a download="PhillipSwartzResume" target="_blank" rel="noopener noreferrer" href={resume}>
+                    <button className="download-btn">
+                        <FaDownload />
+                        <span id="download-text">Download Resume</span>
+                    </button>
+                </a>
             </div>
         </div>
     )
