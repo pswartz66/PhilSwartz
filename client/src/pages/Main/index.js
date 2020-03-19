@@ -1,15 +1,15 @@
 import React from 'react';
 import Header from '../../components/Header'
-import AboutMe from '../../components/AboutMe';
-import Works from '../../components/Works';
+// import AboutMe from '../../components/AboutMe';
+// import Works from '../../components/Works';
 
 function Main() {
 
     return (
         <div>
             <Header />
-            <AboutMe />
-            <Works />
+            {/* <AboutMe /> */}
+            {/* <Works /> */}
         </div>
     )
 }

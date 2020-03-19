@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-scroll";
 
-const CustomNav = () => {
+const CustomNav = (props) => {
 
     return (
         <div id="nav-wrap">
@@ -40,7 +40,7 @@ const CustomNav = () => {
                         </Link>    
                         
                     </Nav.Link>
-                    <Nav.Link href="#work">
+                    <Nav.Link>
                         <Link 
                             activeClass="active"
                             to="worksContainer"
@@ -48,11 +48,12 @@ const CustomNav = () => {
                             smooth={true}
                             offset={0}
                             duration={1000}
+                            onClick={props.onWorkClick}
                         >
                         Works
                     </Link>
                     </Nav.Link>
-                    
+
                     <Nav.Link href="#contact">Contact</Nav.Link>
 
                     
@@ -60,6 +61,7 @@ const CustomNav = () => {
 
             </Navbar.Collapse>
         </Navbar>
+        
         </div>
     )
 }

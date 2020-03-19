@@ -10,6 +10,8 @@ import fadeOutUpBig from 'react-animations/lib/fade-in-up-big';
 import fadeInUp from 'react-animations/lib/fade-in-up';
 import { FaGithub, FaLinkedinIn, FaInstagram, FaAngleDown } from 'react-icons/fa';
 import { Link } from "react-scroll";
+import AboutMe from '../AboutMe';
+import Works from '../Works';
 
 
 // Animations for header section on initial page load
@@ -38,8 +40,9 @@ const FadeIn = styled.div`
   animation: 2.9s ${myFadeIn};
 `;
 
-const Header = (props) => {
 
+const Header = (props) => {
+    
     return (
         <div>
             <header id="home">
@@ -116,9 +119,9 @@ const Header = (props) => {
                     </div>
 
                 </section>
-
+                <AboutMe />
+                <Works />
             </header>
-            
         </div>
     )
 }

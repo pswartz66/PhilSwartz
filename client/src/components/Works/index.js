@@ -1,40 +1,28 @@
 import React from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import portfolio from '../../assets/img/port-img.png';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
+// import portfolio from '../../assets/img/port-img.png';
+import styled, { keyframes } from 'styled-components';
+import flipInX from 'react-animations/lib/rubber-band';
 import './style.css';
 
+const leftSlide = keyframes`${flipInX}`;
+const SlideLeft = styled.div`
+        animation: 2.0s ${leftSlide};
+`;
+
 const Works = () => {
-
     return (
-        <div className="worksContainer">
-            <Row>
-                <Col>
-                    <div className="worksHeader">
-                        <h5>Check out some of my work.</h5>
-                    </div>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <hr className="worksDivider"></hr>
-                </Col>
-            </Row>
-            <div className="subContainer">
-                <div className="workCard">
-                    <img className="card-Images" src={portfolio} alt="card-one"></img>
-                    <div className="overlay">test input</div>
-                </div>
-                <div className="workCard">
 
-                </div>
-                <div className="workCard">
+        <SlideLeft>
+            <div className="worksContainer">
 
-                </div>
+                <div className="opacityContainer"></div>
+
             </div>
-
-        </div>
+        </SlideLeft>
     )
+
 
 }
 
