@@ -48,7 +48,6 @@ const CustomNav = (props) => {
                             smooth={true}
                             offset={0}
                             duration={1000}
-                            onClick={props.onWorkClick}
                         >
                         Works
                     </Link>
