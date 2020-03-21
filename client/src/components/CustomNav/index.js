@@ -12,7 +12,6 @@ const CustomNav = (props) => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mx-auto">
-                    
                     <Nav.Link>
                         <Link
                             activeClass="active"
@@ -52,15 +51,10 @@ const CustomNav = (props) => {
                         Works
                     </Link>
                     </Nav.Link>
-
                     <Nav.Link href="#contact">Contact</Nav.Link>
-
-                    
                 </Nav>
-
             </Navbar.Collapse>
         </Navbar>
-        
         </div>
     )
 }

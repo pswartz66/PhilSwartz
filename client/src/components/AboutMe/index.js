@@ -11,7 +11,6 @@ const AboutMe = (props) => {
                 <img className="prof-img" alt="blank" src={profileImg}>
                 </img>
             </div>
-
             <div className="right-pane">
                 <h2 className="Title">About Me</h2>
                 <div className="aboutMeParagraph">

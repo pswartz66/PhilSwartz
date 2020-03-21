@@ -27,7 +27,6 @@ spacing i.e. right side of page */
     display: flex;
     justify-content: center;
 }
-
 .right-pane {
     width: 100%;
     padding: 80px 40px 0 0;
@@ -36,7 +35,6 @@ spacing i.e. right side of page */
     /* height: 92vh; */
     text-align: left;
     /* justify-content: flex-start; */
-
 }
 .prof-img {
     height: 140px;

@@ -40,7 +40,6 @@ const FadeIn = styled.div`
   animation: 2.9s ${myFadeIn};
 `;
 
-
 const Header = (props) => {
     
     return (
@@ -53,13 +52,10 @@ const Header = (props) => {
                         </span>
                             <div className="divider-two"></div>
                         </SlideLeft>
-
                         <SlideRight>
-
                             <Row>
                                 <Col></Col>
                                 <Col></Col>
-
                                 <Col>
                                     <FadeBigGit>
                                         <a className="header-icons" href="https://github.com/pswartz66">
