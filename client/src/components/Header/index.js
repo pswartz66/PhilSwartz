@@ -109,7 +109,6 @@ const Header = (props) => {
                                     </Link> 
                                     </a>
                                 </FadeIn>
-
                             </Col>
                         </Row>
                     </div>

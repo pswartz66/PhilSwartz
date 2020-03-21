@@ -1,0 +1,47 @@
+
+.front-items {
+    /* height: auto; */
+    width: 100%;    
+    /* flex-direction: row; */
+    /* justify-content: flex-end; */
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 45px;
+    border-radius: 8px;
+    opacity: .9;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    box-shadow: 0 0 20px rgb(5, 5, 5);
+}
+.front-items > h6 {
+    color: yellow;
+}
+.front-items > h3 {
+    color: rgb(162, 26, 224);
+}
+.front-items > p {
+    color: rgb(151, 211, 245);
+}
+.front-items > a {
+    color: rgb(243, 243, 243);
+    width: 30%;
+}
+.front-items > a:hover {
+    color: rgb(190, 115, 115);
+    text-decoration: none;
+}
+.front-viewDetails {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.front-items:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.react-card-front {
+    width: 100%!important;
+}
