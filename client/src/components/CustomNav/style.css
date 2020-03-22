@@ -26,7 +26,10 @@ ul {
 }
 /* adjust size of nav slightly to fix small gap */
 @media only screen and (max-width: 768px) {
-    .navbar {
+    /* .navbar {
         height: 59px;
     }
+    .navbar-collapse {
+        height: 172px;
+    } */
 }

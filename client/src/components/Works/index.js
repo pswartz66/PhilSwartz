@@ -33,54 +33,52 @@ class Works extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="worksContainer">
-                    <h4>Check out some of my work.</h4>
+            <div className="worksContainer">
+                <h4>Check out some of my work.</h4>
 
-                    <div className="work-item">
-                        <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
+                <div className="work-item">
+                    <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
 
-                            <FrontCard onClick={this.handleClick} />
-                            <BackCard onClick={this.handleClick} />
+                        <FrontCard onClick={this.handleClick} />
+                        <BackCard onClick={this.handleClick} />
 
-                            {/* <div className="items">
+                        {/* <div className="items">
                             <h6>ReactJS</h6>
                             <h3>My Portfolio</h3>
                             <p>Single page application showcasing my work and resume.</p>
                             <a className="viewDetails" href="https://github.com/pswartz66/PhilSwartz">VIEW DETAILS</a>
                         </div> */}
-                        </ReactCardFlip>
-                        <div className="item-img">
-                            <img alt="react" className="react-img" src={ReactLogo}></img>
-                        </div>
-
+                    </ReactCardFlip>
+                    <div className="item-img">
+                        <img alt="react" className="react-img" src={ReactLogo}></img>
                     </div>
 
+                </div>
 
-                    <br></br>
-                    <div className="work-item">
-                        <div className="item-img">
-                            <img alt="node" className="node-img" src={NodeLogo}></img>
-                        </div>
-                        <div className="items">
-                            <h6>NodeJS + MySQL</h6>
-                            <h3>Bamazon</h3>
-                            <p>CLI application that uses inquirer and cli-table with mysql to maintain beer and liquor inventory.</p>
-                            <a className="viewDetails" href="https://github.com/pswartz66/bamazon">VIEW DETAILS</a>
-                        </div>
 
+                <br></br>
+                <div className="work-item">
+                    <div className="item-img">
+                        <img alt="node" className="node-img" src={NodeLogo}></img>
                     </div>
-                    <br></br>
-                    <div className="work-item">
-                        <div className="items">
-                            <h6>ReactJS + Express + Node + MongoDB</h6>
-                            <h3>Patient First</h3>
-                            <p>Health data collection app for patients to share information with their primary care physician.</p>
-                            <a className="viewDetails" href="https://github.com/maleszewskid/Project-3">VIEW DETAILS</a>
-                        </div>
-                        <div className="item-img">
-                            <img alt="mongo" className="mongo-img" src={MongoLogo}></img>
-                        </div>
+                    <div className="items">
+                        <h6>NodeJS + MySQL</h6>
+                        <h3>Bamazon</h3>
+                        <p>CLI application that uses inquirer and cli-table with mysql to maintain beer and liquor inventory.</p>
+                        <a className="viewDetails" href="https://github.com/pswartz66/bamazon">VIEW DETAILS</a>
+                    </div>
+
+                </div>
+                <br></br>
+                <div className="work-item">
+                    <div className="items">
+                        <h6>ReactJS + Express + Node + MongoDB</h6>
+                        <h3>Patient First</h3>
+                        <p>Health data collection app for patients to share information with their primary care physician.</p>
+                        <a className="viewDetails" href="https://github.com/maleszewskid/Project-3">VIEW DETAILS</a>
+                    </div>
+                    <div className="item-img">
+                        <img alt="mongo" className="mongo-img" src={MongoLogo}></img>
                     </div>
                 </div>
             </div>

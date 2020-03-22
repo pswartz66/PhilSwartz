@@ -114,9 +114,10 @@ const Header = (props) => {
                     </div>
 
                 </section>
-                <AboutMe />
-                <Works />
+                
             </header>
+            <AboutMe />
+            <Works />
         </div>
     )
 }
