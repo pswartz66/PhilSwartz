@@ -21,7 +21,8 @@ const BackCard = (props) => {
                         '      duration= {1000} \n' +
                         '      className="down-arrow" \n' +
                         '      > \n' +
-                        '      <FaAngleDown color={"rgb(94, 248, 114)"} size={28} /> \n' +
+                        '      <FaAngleDown color={"rgb(94, 248, 114)"}\n' +
+                                '                   size={28} /> \n' +
                         '    </Link> \n' +
                         '  </a> \n' +
                         '</FadeIn>';

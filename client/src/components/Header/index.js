@@ -12,6 +12,7 @@ import { FaGithub, FaLinkedinIn, FaInstagram, FaAngleDown } from 'react-icons/fa
 import { Link } from "react-scroll";
 import AboutMe from '../AboutMe';
 import Works from '../Works';
+import Contact from '../Contact';
 
 
 // Animations for header section on initial page load
@@ -118,6 +119,7 @@ const Header = (props) => {
             </header>
             <AboutMe />
             <Works />
+            <Contact />
         </div>
     )
 }

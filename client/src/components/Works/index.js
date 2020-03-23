@@ -7,6 +7,7 @@ import React from 'react';
 import ReactLogo from '../../assets/img/logo192.png';
 import NodeLogo from '../../assets/img/node-image.png';
 import MongoLogo from '../../assets/img/mongodb-logo-1.png';
+import ExpoLogo from '../../assets/img/expo-img.jpeg';
 import ReactCardFlip from 'react-card-flip';
 import FrontCard from '../FrontCard';
 import BackCard from '../BackCard';
@@ -80,6 +81,19 @@ class Works extends React.Component {
                     <div className="item-img">
                         <img alt="mongo" className="mongo-img" src={MongoLogo}></img>
                     </div>
+                </div>
+                <br></br>
+                <div className="work-item">
+                    <div className="item-img">
+                        <img alt="expo" className="expo-img" src={ExpoLogo}></img>
+                    </div>
+                    <div className="items">
+                        <h6>React-Native</h6>
+                        <h3>Tennis Ranker</h3>
+                        <p>Mobile application that uses expo and mongo for tennis coaches to track their players records.</p>
+                        <a className="viewDetails" href="https://github.com/pswartz66/TennisRanker">VIEW DETAILS</a>
+                    </div>
+
                 </div>
             </div>
         )

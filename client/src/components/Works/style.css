@@ -1,5 +1,5 @@
 .worksContainer {
-    height: 100vh;
+    /* height: 100vh; */
     /* width: 100%; */
     background-color: rgb(255, 255, 255);
     opacity: .9;
@@ -10,7 +10,7 @@
 }
 .work-item {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     width: 100%;
 }
 .items {
@@ -58,6 +58,13 @@ h4 {
 }
 /* mongo image */
 .mongo-img {
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    align-items: center;
+}
+/* expo image */
+.expo-img {
     height: 120px;
     width: 120px;
     padding: 10px;

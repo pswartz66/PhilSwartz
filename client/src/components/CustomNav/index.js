@@ -51,7 +51,18 @@ const CustomNav = (props) => {
                         Works
                     </Link>
                     </Nav.Link>
-                    <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Nav.Link>
+                        <Link
+                            activeClass="active"
+                            to="contactContainer"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={1000}
+                        >
+                            Contact
+                        </Link>
+                    </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

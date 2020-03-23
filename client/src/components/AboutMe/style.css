@@ -2,10 +2,11 @@
 .aboutMeContainer {
     /* height: 92vh; */
     height: 100vh;
+    /* height: 800px; */
     width: 100%;
     background-color: rgb(48, 48, 48);
     display: flex;
-    overflow: auto;
+    /* overflow: auto; */
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -95,7 +96,7 @@ ul {
 /* adjust panes when screen size < 768px */
 @media only screen and (max-width: 768px) {
     .aboutMeContainer {
-        /* height: 780px; */
+        height: 780px;
         width: 100%;
         background-color: rgb(48, 48, 48);
         flex-direction: column;
@@ -161,5 +162,25 @@ ul {
     }
     .Title {
         margin-top: 20px;
+    }
+    .aboutMeContainer {
+        height: 780px;
+        width: 100%;
+        background-color: rgb(48, 48, 48);
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 532px) and (min-width: 500px) {
+    .aboutMeContainer {
+        height: 780px;
+        width: 100%;
+        background-color: rgb(48, 48, 48);
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 60px;
     }
   }
