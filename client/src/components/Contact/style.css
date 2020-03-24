@@ -2,16 +2,89 @@
     /* display: flex; */
     width: 100%;
     height: 700px;
-    background-color: rgb(34, 37, 37);
+    background-color: rgb(97, 167, 167);
     color: white;
+    opacity: .9;
+}
+.contact-head {
+    padding: 60px 40px 40px 40px;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    /* display: flex; */
+    justify-content: center;
+    /* text-align: left; */
+    align-items: center;
+}
+.email-icon {
+    padding-right: 40px;
+    /* size: 120px!important; */
+}
+.sub-contact-container {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 6px;
+    opacity: .9;
 }
 
-.email-icon {
-    margin-top: 20px;
-    /* height: 200px; */
-    width: 200px;
-    color: white;
+.form-center {
+    padding: 40px;
+    /* align-items: center; */
 }
-.email-text-center {
-    
+
+.form-label {
+    padding-top: 14px;
+    padding-bottom: 4px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(79, 120, 255);
+    /* justify-content: center; */
+}
+.required {
+    color: rgb(94, 248, 114);
+}
+input {
+    width: 50%;
+    vertical-align: top!important;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+}
+#contactName {
+    height: 36px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+#contactName:hover {
+    background-color: rgb(94, 248, 114);
+}
+
+#emailField {
+    height: 36px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+#emailField:hover {
+    background-color: rgb(94, 248, 114);
+}
+#subjectField {
+    height: 36px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+#subjectField:hover {
+    background-color: rgb(94, 248, 114);
+}
+#messageField {
+    height: 140px;
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+    border: none!important;
+}
+#messageField:hover {
+    background-color: rgb(94, 248, 114);
 }

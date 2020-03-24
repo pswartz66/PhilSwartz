@@ -8,25 +8,54 @@ class Contact extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            mystring: ""
+            pName: ""
         }
     }
 
     render() {
-        return ( 
+        return (
             <div className="contactContainer">
-                <Row>
-                    <Col className="col-2">
-                        <div className="email-icon">
-                            <MdEmail size={64}/>
-                        </div>
-                    </Col>
-                    <Col className="col-10">
-                        {/* <div className="email-text-center"> */}
-                            Please fill out the form below to get in touch!
-                        {/* </div> */}
-                    </Col>
-                </Row>
+                <div className="contact-head">
+                    <MdEmail size={80} />
+
+                    <div className="sub-contact-container">
+
+                        <form className="form-center">
+                            <div>
+                                <div className="form-label">
+                                    <label for="">
+                                        Name <span className="required">*</span>
+                                    </label>
+                                </div>
+                                <input type="text" id="contactName" name="contactName" />
+                            </div>
+                            <div>
+                                <div className="form-label">
+                                    <label for="">
+                                        Email <span className="required">*</span>
+                                    </label>
+                                </div>
+                                <input type="text" id="emailField" name="emailField" />
+                            </div>
+                            <div>
+                                <div className="form-label">
+                                    <label for="">
+                                        Subject <span className=""></span>
+                                    </label>
+                                </div>
+                                <input type="text" id="subjectField" name="subjectField" />
+                            </div>
+                            <div>
+                                <div className="form-label">
+                                    <label for="">
+                                        Message <span className="required">*</span>
+                                    </label>
+                                </div>
+                                <input type="text" id="messageField" name="messageField" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         )
     }
