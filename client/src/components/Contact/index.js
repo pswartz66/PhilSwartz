@@ -1,6 +1,5 @@
 import React from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import { MdEmail } from 'react-icons/md';
 import './style.css';
 
@@ -51,8 +50,11 @@ class Contact extends React.Component {
                                         Message <span className="required">*</span>
                                     </label>
                                 </div>
-                                <input type="text" id="messageField" name="messageField" />
+                                <textarea type="text" id="messageField" name="messageField" />
                             </div>
+                            <Button className="email-btn" variant="primary" size="md">
+                                Submit
+                            </Button>
                         </form>
                     </div>
                 </div>

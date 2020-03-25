@@ -1,15 +1,16 @@
 .contactContainer {
     /* display: flex; */
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
     background-color: rgb(97, 167, 167);
     color: white;
     opacity: .9;
 }
 .contact-head {
-    padding: 60px 40px 40px 40px;
+    padding: 60px 40px 60px 40px;
     width: 100%;
     background-color: rgb(26, 26, 26);
+    /* margin: 20px; */
     /* display: flex; */
     justify-content: center;
     /* text-align: left; */
@@ -21,17 +22,14 @@
 }
 .sub-contact-container {
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
     background-color: rgb(0, 0, 0);
     border-radius: 6px;
     opacity: .9;
 }
-
 .form-center {
     padding: 40px;
-    /* align-items: center; */
 }
-
 .form-label {
     padding-top: 14px;
     padding-bottom: 4px;
@@ -45,13 +43,21 @@
 }
 input {
     width: 50%;
-    vertical-align: top!important;
-    font-size: 18px;
+    font-size: 16px!important;
     color: rgb(0, 0, 0);
     border-radius: 2px;
+    text-align: top;
+}
+textarea {
+    border-radius: 2px;
+    font-size: 16px!important;
+    color: rgb(0, 0, 0);
+    width: 300px!important;
+    margin-bottom: 10px;
 }
 #contactName {
     height: 36px;
+    width: 300px;
     padding: 10px;
     background-color: white;
     border: none;
@@ -59,9 +65,9 @@ input {
 #contactName:hover {
     background-color: rgb(94, 248, 114);
 }
-
 #emailField {
     height: 36px;
+    width: 300px;
     padding: 10px;
     background-color: white;
     border: none;
@@ -71,6 +77,7 @@ input {
 }
 #subjectField {
     height: 36px;
+    width: 300px;
     padding: 10px;
     background-color: white;
     border: none;
@@ -80,6 +87,7 @@ input {
 }
 #messageField {
     height: 140px;
+    width: 300px;
     width: 50%;
     padding: 10px;
     background-color: white;
@@ -87,4 +95,116 @@ input {
 }
 #messageField:hover {
     background-color: rgb(94, 248, 114);
+}
+.email-btn {
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(79, 120, 255);
+    font-weight: 600;
+    width: 300px;
+}
+.email-btn:hover {
+    margin: 10px;
+    background-color: rgb(94, 248, 114);
+    color: rgb(79, 120, 255);
+    font-weight: 600;
+    width: 300px;
+}
+
+@media only screen and (max-width: 500px) { 
+    .contact-head {
+        padding: 60px 20px 40px 20px;
+        width: 100%;
+        background-color: rgb(26, 26, 26);
+        /* margin: 20px; */
+        /* display: flex; */
+        justify-content: center;
+        /* text-align: left; */
+        align-items: center;
+    }
+    .form-center {
+        padding: 10px;
+    }
+    .form-label {
+        padding-top: 14px;
+        padding-bottom: 4px;
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(79, 120, 255);
+        /* justify-content: center; */
+    }
+    .required {
+        color: rgb(94, 248, 114);
+    }
+    input {
+        width: 50%;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        border-radius: 2px;
+        text-align: top;
+    }
+    textarea {
+        border-radius: 2px;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        width: 240px!important;
+        margin-bottom: 10px;
+    }
+    #contactName {
+        height: 36px;
+        width: 240px;
+        padding: 10px;
+        background-color: white;
+        border: none;
+    }
+    #contactName:hover {
+        background-color: rgb(94, 248, 114);
+    }
+    #emailField {
+        height: 36px;
+        width: 240px;
+        padding: 10px;
+        background-color: white;
+        border: none;
+    }
+    #emailField:hover {
+        background-color: rgb(94, 248, 114);
+    }
+    #subjectField {
+        height: 36px;
+        width: 240px;
+        padding: 10px;
+        background-color: white;
+        border: none;
+    }
+    #subjectField:hover {
+        background-color: rgb(94, 248, 114);
+    }
+    #messageField {
+        height: 140px;
+        width: 240px;
+        width: 50%;
+        padding: 10px;
+        background-color: white;
+        border: none!important;
+    }
+    #messageField:hover {
+        background-color: rgb(94, 248, 114);
+    }
+    .email-btn {
+        margin: 10px;
+        font-size: 16px;
+        border: none;
+        background-color: rgb(79, 120, 255);
+        font-weight: 600;
+        width: 240px;
+    }
+    .email-btn:hover {
+        margin: 10px;
+        background-color: rgb(94, 248, 114);
+        color: rgb(79, 120, 255);
+        font-weight: 600;
+        width: 240px;
+    }
 }
