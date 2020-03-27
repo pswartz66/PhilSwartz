@@ -1,0 +1,22 @@
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(194, 194, 194);
+}
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+.up-arrow:hover {
+    cursor: pointer;
+    color: rgb(86, 226, 105);
+}
+.up-arrow > svg > path {
+    color: rgb(59, 59, 59);
+}

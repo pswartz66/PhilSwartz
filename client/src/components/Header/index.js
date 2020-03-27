@@ -13,7 +13,7 @@ import { Link } from "react-scroll";
 import AboutMe from '../AboutMe';
 import Works from '../Works';
 import Contact from '../Contact';
-
+import Footer from '../Footer';
 
 // Animations for header section on initial page load
 const leftSlide = keyframes`${slideInLeft}`;
@@ -96,7 +96,7 @@ const Header = (props) => {
                         <Row>
                             <Col>
                                 <FadeIn>
-                                    <a className="down-arrow" href="#anchor">
+                                    <div className="down-arrow">
                                     <Link
                                         activeClass="active"
                                         to="aboutMeContainer"
@@ -108,7 +108,7 @@ const Header = (props) => {
                                     >
                                         <FaAngleDown color={'rgb(94, 248, 114)'} size={28} />
                                     </Link> 
-                                    </a>
+                                    </div>
                                 </FadeIn>
                             </Col>
                         </Row>
@@ -120,6 +120,7 @@ const Header = (props) => {
             <AboutMe />
             <Works />
             <Contact />
+            <Footer />
         </div>
     )
 }
