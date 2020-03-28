@@ -2,6 +2,7 @@
 #nav-wrap {
     z-index: 100;
     /* display: flex; */
+    /* flex-wrap: wrap; */
     position: fixed;
     align-items: center;
     min-height: 50px;
@@ -10,10 +11,14 @@
     width: 100%;
     background-color: rgb(17, 17, 17);
 }
+.navbar-nav {
+    position: relative!important;
+    /* top: 0px; */
+}
 .navbar-nav > a.nav-link {
     font-size: 18px;
     margin: 0 20px 0 20px;
-    color: rgb(179, 179, 179)!important;
+    color: rgb(201, 201, 201)!important;
 }
 .navbar-nav > a.nav-link:hover {
     color: rgba(134, 139, 134, 0.938)!important;

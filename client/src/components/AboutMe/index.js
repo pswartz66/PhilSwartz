@@ -15,11 +15,16 @@ const AboutMe = (props) => {
                 <h2 className="Title">About Me</h2>
                 <div className="aboutMeParagraph">
                     <p>Hey everyone! Glad you've checked out my portfolio!
-                        To give a little background, I was introduced to programming
-                        around 2012 during my time in college. After graduating I used a number
-                        of online tools like YouTube, Udemy, and free textbooks to learn about Python since
-                        I was intruged by data. Most recently I completed the Penn LPS coding bootcamp which was primarily geared
-                        towards full stack web development.
+                        I'm a full stack web developer in Philadelphia, PA with a background
+                        in finance. I was introduced to programming around 2012 during
+                        my time in college and it wasn't until 2019 where I really started to 
+                        formalize my training into a career. I recently completed the Penn LPS 
+                        coding bootcamp which was primarily geared towards full stack web development.
+                        I've worked with technologies and langauages like Javascript, HTML, CSS, JQuery, 
+                        React JS, MongoDB, Mongoose, MySQL, Sequelize, Firebase, Node, NPM, Express, 
+                        and Handlebars. I've leveraged API's such as GoogleBooks, Spotify, Deezer, IMDB, 
+                        and SeatGeek to support some of my projects.
+                        
                     </p>
                 </div>
                 <br></br>
