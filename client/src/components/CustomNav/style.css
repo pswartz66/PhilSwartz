@@ -15,13 +15,14 @@
     position: relative!important;
     /* top: 0px; */
 }
-.navbar-nav > a.nav-link {
+.navbar-nav > a {
     font-size: 18px;
-    margin: 0 20px 0 20px;
+    margin: 0 20px 4px 20px;
     color: rgb(201, 201, 201)!important;
 }
-.navbar-nav > a.nav-link:hover {
+.navbar-nav > a:hover {
     color: rgba(134, 139, 134, 0.938)!important;
+    cursor: pointer;
 }
 ul {
     display: flex;

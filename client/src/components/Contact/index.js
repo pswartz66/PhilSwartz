@@ -78,7 +78,7 @@ class Contact extends React.Component {
                         <form className="form-center">
                             <div>
                                 <div className="form-label">
-                                    <label for="">
+                                    <label>
                                         Name <span className="required">*</span>
                                     </label>
                                 </div>
@@ -91,7 +91,7 @@ class Contact extends React.Component {
                             </div>
                             <div>
                                 <div className="form-label">
-                                    <label for="">
+                                    <label>
                                         Email <span className="required">*</span>
                                     </label>
                                 </div>
@@ -104,7 +104,7 @@ class Contact extends React.Component {
                             </div>
                             <div>
                                 <div className="form-label">
-                                    <label for="">
+                                    <label>
                                         Subject <span className=""></span>
                                     </label>
                                 </div>
@@ -117,7 +117,7 @@ class Contact extends React.Component {
                             </div>
                             <div>
                                 <div className="form-label">
-                                    <label for="">
+                                    <label>
                                         Message <span className="required">*</span>
                                     </label>
                                 </div>
