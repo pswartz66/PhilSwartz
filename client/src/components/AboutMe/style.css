@@ -52,12 +52,13 @@ spacing i.e. right side of page */
 .aboutMeParagraph {
     padding: 0 5px 0px 0!important;
     line-height: 1.75rem;
-    color: rgb(175, 174, 174);
+    color: rgb(187, 186, 186);
 }
 .info > ul {
     padding: 0;
     margin: 0;
-    color: rgb(175, 174, 174);
+    color: rgb(187, 186, 186);
+    /* color: rgb(175, 174, 174); */
     line-height: 1.75rem;
 }
 /* overrides default ul behavior set to 
@@ -86,6 +87,9 @@ ul {
     color: black;
     background-color: white;
     border: none;
+}
+.abt-text {
+    color: rgb(94, 248, 114);
 }
 /* #download-text:hover {
     color: black;
@@ -157,7 +161,7 @@ ul {
         justify-content: center;
         padding: 0;
         margin: 0;
-        color: rgb(175, 174, 174);
+        color: rgb(187, 186, 186);
         line-height: 1.75rem;
     }
   }

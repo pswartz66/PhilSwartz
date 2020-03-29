@@ -53,7 +53,7 @@ class Contact extends React.Component {
     }
     // handle submit button element
     // add in error handling for blank input fields
-    handleSubmit= event => {
+    handleSubmit = (event) => {
         event.preventDefault();
         let tempDataObj = {};
         tempDataObj = {
