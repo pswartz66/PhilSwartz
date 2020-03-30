@@ -17,7 +17,7 @@
 }
 .navbar-nav > a {
     font-size: 18px;
-    margin: 0 20px 4px 20px;
+    margin: 4px 20px 4px 20px;
     color: rgb(201, 201, 201)!important;
 }
 .navbar-nav > a:hover {

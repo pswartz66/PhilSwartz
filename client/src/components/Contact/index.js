@@ -12,7 +12,8 @@ class Contact extends React.Component {
             emailInput: "",
             subjectInput: "",
             messageInput: "",
-            data: {}
+            data: {},
+            emailSent: false
         }
     }
 
@@ -70,8 +71,8 @@ class Contact extends React.Component {
 
     sendEmailAddress = (event) => {
         event.preventDefault();
-        let emailData = {};
-        emailData = {
+        // let emailData = {};
+        let emailData = {
             name: this.state.nameInput,
             email: this.state.emailInput,
             subject: this.state.subjectInput,
@@ -80,7 +81,9 @@ class Contact extends React.Component {
         // this.setState({ data: emailData })
         API.sendEmail(emailData)
             .then(res => {
-                res.json();
+                // console.log(res);
+                this.setState({ emailSent: true });
+                // console.log(res.json());
             })
             .catch(err => console.log(err));
     }
@@ -147,7 +150,7 @@ class Contact extends React.Component {
                                     name="messageInput" />
                             </div>
                             <Button
-                                onClick={this.sendEmailAddress} 
+                                onClick={(event) => this.sendEmailAddress(event)} 
                                 className="email-btn" 
                                 variant="primary" 
                                 size="md">
