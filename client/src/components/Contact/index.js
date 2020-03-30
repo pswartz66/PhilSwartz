@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { MdEmail } from 'react-icons/md';
+import API from '../../utils/API';
 import './style.css';
 
 class Contact extends React.Component {
@@ -67,6 +68,23 @@ class Contact extends React.Component {
         console.log(this.state.data);
     }
 
+    sendEmailAddress = (event) => {
+        event.preventDefault();
+        let emailData = {};
+        emailData = {
+            name: this.state.nameInput,
+            email: this.state.emailInput,
+            subject: this.state.subjectInput,
+            message: this.state.messageInput
+        }
+        // this.setState({ data: emailData })
+        API.sendEmail(emailData)
+            .then(res => {
+                res.json();
+            })
+            .catch(err => console.log(err));
+    }
+
     render() {
         return (
             <div className="contactContainer">
@@ -129,7 +147,7 @@ class Contact extends React.Component {
                                     name="messageInput" />
                             </div>
                             <Button
-                                onClick={this.handleSubmit} 
+                                onClick={this.sendEmailAddress} 
                                 className="email-btn" 
                                 variant="primary" 
                                 size="md">
