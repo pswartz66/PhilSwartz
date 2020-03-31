@@ -83,7 +83,7 @@ class Contact extends React.Component {
             .then(res => {
                 // console.log(res);
                 this.setState({ emailSent: true });
-                // console.log(res.json());
+                res.json();
             })
             .catch(err => console.log(err));
     }
