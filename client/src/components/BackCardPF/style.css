@@ -1,4 +1,4 @@
-.back-items {
+.back-items-pf {
     height: 500px;
     /* width: calc(100%); */
     flex-direction: row;
@@ -14,37 +14,37 @@
     box-shadow: 0 0 20px rgb(5, 5, 5);
     overflow: scroll;
 }
-.back-items > h6 {
+.back-items-pf > h6 {
     color: rgb(53, 255, 80);
     font-family: "SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New",monospace;
 }
-.back-items > h3 {
+.back-items-pf > h3 {
     color: rgb(162, 26, 224);
 }
-.back-items > p {
+.back-items-pf > p {
     color: rgb(18, 172, 13);
 }
-.back-items > a {
+.back-items-pf > a {
     color: rgb(243, 243, 243);
     width: 30%;
 }
-.back-items > a:hover {
+.back-items-pf > a:hover {
     color: rgb(190, 115, 115);
     text-decoration: none;
 }
-.back-viewDetails {
+.back-viewDetails-pf {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
 }
-.back-items:hover{
+.back-items-pf:hover{
     cursor: pointer;
     transform: scale(1.02);
 }
-.back-items > pre {
+.back-items-pf > pre {
     color: rgb(194, 245, 55);
 }
-.back-comment {
+.back-comment-pf {
     color: rgb(18, 172, 13)!important;
     font-size: 1em;
 }

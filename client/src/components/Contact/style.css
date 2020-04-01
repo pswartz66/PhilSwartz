@@ -52,12 +52,12 @@ textarea {
     border-radius: 2px;
     font-size: 16px!important;
     color: rgb(0, 0, 0);
-    width: 300px!important;
+    width: 320px!important;
     margin-bottom: 10px;
 }
 #contactName {
     height: 36px;
-    width: 300px;
+    width: 320px;
     padding: 10px;
     background-color: white;
     border: none;
@@ -67,7 +67,7 @@ textarea {
 }
 #emailField {
     height: 36px;
-    width: 300px;
+    width: 320px;
     padding: 10px;
     background-color: white;
     border: none;
@@ -77,7 +77,7 @@ textarea {
 }
 #subjectField {
     height: 36px;
-    width: 300px;
+    width: 320px;
     padding: 10px;
     background-color: white;
     border: none;
@@ -87,7 +87,7 @@ textarea {
 }
 #messageField {
     height: 140px;
-    width: 300px;
+    width: 320px;
     width: 50%;
     padding: 10px;
     background-color: white;
@@ -102,7 +102,7 @@ textarea {
     border: none;
     background-color: rgb(79, 120, 255);
     font-weight: 600;
-    width: 300px;
+    width: 320px;
 }
 .email-btn:hover {
     margin: 10px;
@@ -148,12 +148,12 @@ textarea {
         border-radius: 2px;
         font-size: 16px;
         color: rgb(0, 0, 0);
-        width: 240px!important;
+        width: 260px!important;
         margin-bottom: 10px;
     }
     #contactName {
         height: 36px;
-        width: 240px;
+        width: 260px;
         padding: 10px;
         background-color: white;
         border: none;
@@ -163,7 +163,7 @@ textarea {
     }
     #emailField {
         height: 36px;
-        width: 240px;
+        width: 260px;
         padding: 10px;
         background-color: white;
         border: none;
@@ -173,7 +173,7 @@ textarea {
     }
     #subjectField {
         height: 36px;
-        width: 240px;
+        width: 260px;
         padding: 10px;
         background-color: white;
         border: none;
@@ -183,7 +183,7 @@ textarea {
     }
     #messageField {
         height: 140px;
-        width: 240px;
+        width: 260px;
         width: 50%;
         padding: 10px;
         background-color: white;
@@ -198,7 +198,7 @@ textarea {
         border: none;
         background-color: rgb(79, 120, 255);
         font-weight: 600;
-        width: 240px;
+        width: 260px;
     }
     .email-btn:hover {
         margin: 10px;

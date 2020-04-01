@@ -60,7 +60,7 @@ const Header = (props) => {
                                 <Col>
                                     <FadeBigGit>
                                         <a className="header-icons" href="https://github.com/pswartz66">
-                                            <FaGithub size={24} />
+                                            <FaGithub size={32} />
                                         </a>
                                     </FadeBigGit>
 
@@ -68,14 +68,14 @@ const Header = (props) => {
                                 <Col>
                                     <FadeBigLink>
                                         <a className="header-icons" href="https://www.linkedin.com/in/phillip-swartz-a6816199/">
-                                            <FaLinkedinIn size={24} />
+                                            <FaLinkedinIn size={32} />
                                         </a>
                                     </FadeBigLink>
                                 </Col>
                                 <Col>
                                     <FadeBigGram>
                                     <a className="header-icons" href="https://www.instagram.com/philswartz/?hl=en">
-                                        <FaInstagram size={24} />
+                                        <FaInstagram size={32} />
                                     </a>
                                     </FadeBigGram>
                                 </Col>
@@ -106,7 +106,7 @@ const Header = (props) => {
                                         duration= {1000}
                                         className="down-arrow"
                                     >
-                                        <FaAngleDown color={'rgb(94, 248, 114)'} size={28} />
+                                        <FaAngleDown color={'rgb(94, 248, 114)'} size={32} />
                                     </Link> 
                                     </div>
                                 </FadeIn>

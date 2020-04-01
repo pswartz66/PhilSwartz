@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 
-const BackCard = (props) => {
+const BackCardBM = (props) => {
 
     const sampleString = "const leftSlide = keyframes`${slideInLeft}` \n" +
                         "const SlideLeft = styled.div`\n" +
@@ -28,13 +28,13 @@ const BackCard = (props) => {
                         '</FadeIn>';
 
     return (
-        <div onClick={props.onClick} className="back-items">
+        <div onClick={props.onClick} className="back-items-bm">
             <h6>Code snippets from the project</h6>
             <br></br>
-            <pre className="back-comment">{"// Animation when page loads using \n// styled components"}</pre>
+            <pre className="back-comment-bm">{"// Animation when page loads using \n// styled components"}</pre>
             <pre>{sampleString}</pre>
             <br></br>
-            <pre className="back-comment">{"// Smooth scroll to new section \n// using Link from react-scroll lib"}</pre>
+            <pre className="back-comment-bm">{"// Smooth scroll to new section \n// using Link from react-scroll lib"}</pre>
             <pre>{sampleString2}</pre>
             <br></br>
         </div>
@@ -42,4 +42,4 @@ const BackCard = (props) => {
 }
 
 
-export default BackCard;
+export default BackCardBM;

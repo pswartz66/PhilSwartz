@@ -1,5 +1,5 @@
 
-.front-items {
+.front-items-pf {
     /* height: auto; */
     /* width: 100%;     */
     /* flex-direction: row; */
@@ -15,29 +15,29 @@
     text-align: left;
     box-shadow: 0 0 20px rgb(5, 5, 5);
 }
-.front-items > h6 {
+.front-items-pf > h6 {
     color: yellow;
 }
-.front-items > h3 {
+.front-items-pf > h3 {
     color: rgb(162, 26, 224);
 }
-.front-items > p {
+.front-items-pf > p {
     color: rgb(151, 211, 245);
 }
-.front-items > a {
+.front-items-pf > a {
     color: rgb(243, 243, 243);
     width: 30%;
 }
-.front-items > a:hover {
+.front-items-pf > a:hover {
     color: rgb(190, 115, 115);
     text-decoration: none;
 }
-.front-viewDetails {
+.front-viewDetails-pf {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
 }
-.front-items:hover{
+.front-items-pf:hover{
     cursor: pointer;
     transform: scale(1.02);
 }

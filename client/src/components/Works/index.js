@@ -9,8 +9,12 @@ import NodeLogo from '../../assets/img/node-image.png';
 import MongoLogo from '../../assets/img/mongodb-logo-1.png';
 import ExpoLogo from '../../assets/img/expo-img.jpeg';
 import ReactCardFlip from 'react-card-flip';
-import FrontCard from '../FrontCard';
-import BackCard from '../BackCard';
+// Portfolio project = PF
+import FrontCardPF from '../FrontCardPF';
+import BackCardPF from '../BackCardPF';
+// Bamazon project = BM
+import FrontCardBM from '../FrontCardBM';
+import BackCardBM from '../BackCardBM';
 import './style.css';
 
 // const leftSlide = keyframes`${flipInX}`;
@@ -22,14 +26,23 @@ class Works extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isFlipped: false
+            isFlipped: false,
+            isFlippedBM: false
         };
         this.handleClick = this.handleClick.bind(this);
+        this.handleClickBM = this.handleClickBM.bind(this);
+
     }
 
     handleClick(event) {
         event.preventDefault();
         this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+    }
+
+    handleClickBM(event) {
+        event.preventDefault();
+        console.log('2nd clicked');
+        this.setState(prevStateBM => ({ isFlippedBM: !prevStateBM.isFlippedBM }));
     }
 
     render() {
@@ -38,18 +51,18 @@ class Works extends React.Component {
                 <h4>Check out some of my work.</h4>
 
                 <div className="work-item">
-                    <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
+                    {/* <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
 
-                        <FrontCard onClick={this.handleClick} />
-                        <BackCard onClick={this.handleClick} />
+                        <FrontCardPF onClick={this.handleClick} />
+                        <BackCardPF onClick={this.handleClick} /> */}
 
-                        {/* <div className="items">
+                        <div className="items">
                             <h6>ReactJS</h6>
                             <h3>My Portfolio</h3>
                             <p>Single page application showcasing my work and resume.</p>
                             <a className="viewDetails" href="https://github.com/pswartz66/PhilSwartz">VIEW DETAILS</a>
-                        </div> */}
-                    </ReactCardFlip>
+                        </div>
+                    {/* </ReactCardFlip> */}
                     <div className="item-img">
                         <img alt="react" className="react-img" src={ReactLogo}></img>
                     </div>
@@ -68,6 +81,10 @@ class Works extends React.Component {
                         <p>CLI application that uses inquirer and cli-table with mysql to maintain beer and liquor inventory.</p>
                         <a className="viewDetails" href="https://github.com/pswartz66/bamazon">VIEW DETAILS</a>
                     </div>
+                    {/* <ReactCardFlip isFlippedBM={this.state.isFlippedBM} flipDirection="horizontal">
+                        <FrontCardBM onClick={this.handleClickBM} />
+                        <BackCardBM onClick={this.handleClickBM} />
+                    </ReactCardFlip> */}
 
                 </div>
                 <br></br>

@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3001;
 require('dotenv').config();
 const app = express();
 
-console.log(process.env);
+// console.log(process.env);
 
 // Express middleware:
 app.use(express.urlencoded({ extended: true }));

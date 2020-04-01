@@ -71,7 +71,7 @@ h4 {
     align-items: center;
 }
 .work-item > .items:hover{
-    cursor: pointer;
+    /* cursor: pointer; */
     transform: scale(1.02);
 }
 .work-item > .items > h6 {
