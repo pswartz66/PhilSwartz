@@ -81,10 +81,14 @@ class Contact extends React.Component {
         // this.setState({ data: emailData })
         API.sendEmail(emailData)
             .then(res => {
-                // console.log(res);
-                this.setState({ emailSent: true });
-                res.json();
+                console.log(res.data);
+                this.setState({ 
+                    emailSent: true,
+                    data: emailData
+                });
+                // res.json(emailData);
             })
+            // this is where the error is logging
             .catch(err => console.log(err));
     }
 

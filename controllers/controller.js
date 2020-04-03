@@ -3,8 +3,11 @@
 
 // build template email below using data from front end
 module.exports = {
-    sendEmail: function (req, res) {
+    sendEmailToSelf: function (req, res) {
+        res.send('yooo');
+        console.log(res.json());
         console.log(req.body);
+        // console.log(res.send('Response from server'));
 
         // create reusable transporter object using default SMTP
         // let transporter = nodemailer.createTransport({
