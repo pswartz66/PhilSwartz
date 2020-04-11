@@ -71,22 +71,21 @@ class Contact extends React.Component {
 
     sendEmailAddress = (event) => {
         event.preventDefault();
-        // let emailData = {};
         let emailData = {
             name: this.state.nameInput,
             email: this.state.emailInput,
             subject: this.state.subjectInput,
             message: this.state.messageInput
         }
-        // this.setState({ data: emailData })
+        this.setState({ data: emailData })
         API.sendEmail(emailData)
             .then(res => {
-                console.log(res.data);
-                this.setState({ 
-                    emailSent: true,
-                    data: emailData
-                });
-                // res.json(emailData);
+                console.log(res);
+                // this.setState({ 
+                //     emailSent: true,
+                //     data: emailData
+                // });
+                res.json();
             })
             // this is where the error is logging
             .catch(err => console.log(err));

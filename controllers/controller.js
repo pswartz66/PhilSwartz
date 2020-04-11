@@ -4,8 +4,8 @@
 // build template email below using data from front end
 module.exports = {
     sendEmailToSelf: function (req, res) {
-        res.send('yooo');
-        console.log(res.json());
+        // res.send('yooo');
+        // console.log(res.json());
         console.log(req.body);
         // console.log(res.send('Response from server'));
 

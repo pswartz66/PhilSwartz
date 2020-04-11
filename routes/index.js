@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const apiRoutes = require('./api');
+const controller = require('../controllers/controller');
 
-router.use('/api', apiRoutes);
+router.route('/email').post(controller.sendEmailToSelf);
 
 module.exports = router;
