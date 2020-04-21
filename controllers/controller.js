@@ -1,5 +1,6 @@
 const nodemailer = require('nodemailer');
 const creds = require('../config/emailConfig.js');
+const xoauth2 = require('xoauth2');
 
 // build template email below using data from front end
 module.exports = {
@@ -13,20 +14,33 @@ module.exports = {
         const emailBody = `<p>${req.body.message}</p>`;
 
         // create reusable transporter object using default SMTP
-        let transporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 587,
-            secure: false, // true for 465, false for other ports
-            auth: {
-                user: creds.email,
-                pass: creds.key
-            },
-            tls: {
-                rejectUnauthorized: false
-            }
-        });
+        // let transporter = nodemailer.createTransport({
+        //     host: 'smtp.gmail.com',
+        //     port: 587,
+        //     secure: false, // true for 465, false for other ports
+        //     auth: {
+        //         user: creds.email,
+        //         pass: creds.key
+        //     },
+        //     tls: {
+        //         rejectUnauthorized: false
+        //     }
+        // });
 
-        // /// setup email options object
+        // second pass
+        let transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                xoauth2: xoauth2.createXOAuth2Generator({
+                    user: req.body.emailAddress,
+                    clientId: creds.clientID,
+                    clientSecret: creds.clientSecret,
+                    refreshToken: creds.refreshToken
+                })
+            }
+        })
+
+        // setup email options object
         let mailOptions = {
             from: req.body.emailAddress,
             to: '<philswartzportfolio2@gmail.com>',
@@ -35,7 +49,7 @@ module.exports = {
             html: emailBody // html body see template above
         }
 
-        // // send mail with defined transport object
+        // send mail with defined transport object
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
                 transporter.close();

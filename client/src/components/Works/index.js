@@ -105,7 +105,7 @@ class Works extends React.Component {
                         <img alt="expo" className="expo-img" src={ExpoLogo}></img>
                     </div>
                     <div className="items">
-                        <h6>React-Native</h6>
+                        <h6>React-Native + Expo + MongoDB Stitch</h6>
                         <h3>Tennis Ranker</h3>
                         <p>Mobile application that uses expo and mongo for tennis coaches to track their players records.</p>
                         <a className="viewDetails" href="https://github.com/pswartz66/TennisRanker">VIEW DETAILS</a>
