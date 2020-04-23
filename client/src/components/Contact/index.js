@@ -77,7 +77,14 @@ class Contact extends React.Component {
             subject: this.state.subjectInput,
             message: this.state.messageInput
         }
-        this.setState({ data: emailData })
+        // set data to object and clear input forms
+        this.setState({
+            data: emailData,
+            nameInput: "",
+            emailInput: "",
+            subjectInput: "",
+            messageInput: "",
+        })
         API.sendEmail(emailData)
             .then(res => {
                 console.log(res);
@@ -86,6 +93,8 @@ class Contact extends React.Component {
                 //     data: emailData
                 // });
                 res.json();
+
+                
             })
             // this is where the error is logging
             .catch(err => console.log(err));
