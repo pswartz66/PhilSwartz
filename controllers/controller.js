@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 const creds = require('../config/emailConfig.js');
-const xoauth2 = require('xoauth2');
+// const xoauth2 = require('xoauth2');
 
 // build template email below using data from front end
 module.exports = {
