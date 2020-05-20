@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.f316337a.chunk.css",
+    "main.js": "/portfolio/static/js/main.ecb39804.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ecb39804.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.1639fe85.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.1639fe85.js.map",
+    "static/js/2.dfe4243f.chunk.js": "/portfolio/static/js/2.dfe4243f.chunk.js",
+    "static/js/2.dfe4243f.chunk.js.map": "/portfolio/static/js/2.dfe4243f.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.993f8b7029618741bdb9520491bb6d34.js": "/portfolio/precache-manifest.993f8b7029618741bdb9520491bb6d34.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.f316337a.chunk.css.map": "/portfolio/static/css/main.f316337a.chunk.css.map",
+    "static/js/2.dfe4243f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.dfe4243f.chunk.js.LICENSE.txt",
+    "static/media/Phillip Swartz - Resume.docx": "/portfolio/static/media/Phillip Swartz - Resume.c8dd1fa2.docx",
+    "static/media/ProfilePicture.jpg": "/portfolio/static/media/ProfilePicture.a3cbad76.jpg",
+    "static/media/style.css": "/portfolio/static/media/bg-image.d7e2afa8.jpg",
+    "static/media/mongodb-logo-1.png": "/portfolio/static/media/mongodb-logo-1.06232904.png",
+    "static/media/node-image.png": "/portfolio/static/media/node-image.d42672d4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1639fe85.js",
+    "static/js/2.dfe4243f.chunk.js",
+    "static/css/main.f316337a.chunk.css",
+    "static/js/main.ecb39804.chunk.js"
+  ]
+}
