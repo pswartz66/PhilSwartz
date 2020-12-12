@@ -33,7 +33,7 @@ const AboutMe = (props) => {
                     <ul>Phil Swartz</ul>
                     <ul>Philadelphia, PA</ul>
                     <ul>610-675-5479</ul>
-                    <ul>pswartz.sju@gmail.com</ul>
+                    <ul>philswartz13@gmail.com</ul>
                 </div>
                 <a download="PhillipSwartzResume" target="_blank" rel="noopener noreferrer" href={resume}>
                     <button className="download-btn">
